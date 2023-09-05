@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    background-color: #AEF9E9;
+}
+.first{
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 5px;
+    background-color: #fff;
+    height: 210px;
+}
+.active{
+    height: 550px;
+}
+.first div{
+    padding: 10px;
+    text-align: center;
+    display: grid;
+}
+.first div h1{
+    padding: 10px;
+}
+.form :where(input,button){
+    outline: none;
+    border: none;
+}
+.first div input{
+    margin: 10px;
+    height: 30px;
+    border:1px solid rgb(146, 146, 146);
+    border-radius: 5px;
+}
+.first div button{
+    margin: 5px;
+    height: 30px;
+    background-color:#C3AEF9;
+    border-radius: 5px;
+    border: .5px solid rgb(136, 136, 136);
+    
+}
+.img img{
+    height: 250px;
+}
+.img {
+    height: 250px;
+    margin: 40px;
+    border: 1px solid rgb(177, 177, 177);
+    border-radius: 5px;
+    pointer-events: none;
+    opacity: 0;
+    
+}
+.active .img {
+    opacity: 1;
+    pointer-events: auto;
+}
